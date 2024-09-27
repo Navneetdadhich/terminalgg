@@ -144,18 +144,18 @@ async function getInputValue(){
   const value = document.querySelector("input").value;
   if(value === "dank"){
     trueValue(value);
-    createCode("git","");
-    createCode("projects","");
-    createCode("contact","");
-    createCode("clear","");
-    createCode("image","");
-    createCode("skills","")
+    createCode("Git","");
+    createCode("Projects","");
+    createCode("Contact","");
+    createCode("Clear","");
+    createCode("Image","");
+    createCode("Skills","")
   }
-  else if(value=== "git"){
+  else if(value=== "Git"){
     trueValue(value);
     createText("Click here For project codes <a href='https://github.com/Nvntdad' target='_blank'>https://github.com/Nvntdad</a>")
   }
-  else if(value === "projects"){
+  else if(value === "Projects"){
     trueValue(value);
     createText("Here are some of my projects mentioned which i made earlier to the development journey.\n")
     createText("<a href='https://nvntdad.github.io/friend-s-website/' target='_blank'><i class='fab fa-wrench '></i> ~/ First Project\n")
@@ -163,22 +163,22 @@ async function getInputValue(){
     createText("<a href='https://nvntdad.github.io/clg-web/' target='_blank'><i class='fab fa-wrench '></i> ~/ Second Project")
     createText("#    The second project on which i had worked, was the college website which was made also with only HTML-CSS-Vanilla Javascript. In this college website i had intergrated an AI assitant which provides the basic details about the college. It is also made with UI-UX core principles which makes it easy to use.")
   }
-  else if(value === "contact"){
+  else if(value === "Contact"){
     trueValue(value);
     createText("Email : nvntdadhich@gmail.com");
    }
-   else if (value === "image"){
+   else if (value === "Image"){
     trueValue(value);
     createText("Not Updated");
     // createText(`\n`);
    }
-  else if(value === "skills"){
+  else if(value === "Skills"){
     trueValue(value);
     createText(" Technologies and skills i have used?")
     createText(`| Reactjs | Nodejs | FirebaseDB | MongoDB | TailwindCss | ModuleCss | ReduxToolkit | Problem solving | HTML | CSS | Javascript | npm |\n`);
   }
   
-  else if(value === "clear"){
+  else if(value === "Clear"){
     document.querySelectorAll("p").forEach(e => e.parentNode.removeChild(e));
     document.querySelectorAll("section").forEach(e => e.parentNode.removeChild(e));
     createText("write 'dank' to see the list of the command");
