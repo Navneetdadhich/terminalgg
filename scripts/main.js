@@ -1,5 +1,5 @@
 
-const app = document.querySelector("#app");
+const app = document.querySelector(".mainn");
 const delay = ms => new Promise(res => setTimeout(res, ms));
     
 const asciiArt = `
@@ -166,6 +166,7 @@ async function getInputValue(){
   else if(value === "Contact"){
     trueValue(value);
     createText("Email : nvntdadhich@gmail.com");
+    createText("<a href='https://www.linkedin.com/in/navneet-dadhich-6075772ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank'> Linked In : Navneet dadhich ")
    }
    else if (value === "Image"){
     trueValue(value);
